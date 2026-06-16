@@ -1,0 +1,7 @@
+.git
+.gitignore
+.RData
+.Rhistory
+results/
+data/
+README.md

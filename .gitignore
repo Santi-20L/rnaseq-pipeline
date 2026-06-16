@@ -1,0 +1,18 @@
+# R session data
+.RData
+.Rhistory
+.Rproj.user/
+
+# Data files (not tracked — too large / sensitive)
+data/*.rds
+data/*.csv
+data/*.tsv
+data/*.txt
+
+# Output plots (regenerate from script)
+results/plots/*.png
+results/plots/*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
