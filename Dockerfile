@@ -15,4 +15,4 @@ RUN R -e "install.packages('ggplot2', repos='https://cloud.r-project.org')"
 COPY R/ ./R/
 COPY analysis.R ./
 
-CMD ["Rscript", "analysis.R"]
+CMD ["Rscript", "-e", "source('analysis.R')"]`
