@@ -135,14 +135,21 @@ Hierarchical clustering heatmap of the top 50 most variable genes across all sam
 ##  Running with Docker (Recommended)
 The analysis environment is fully containerized using the official Bioconductor Docker image (Release 3.18), ensuring complete reproducibility of R and Bioc package versions.
 
-Prerequisites: You need Docker installed on your machine. You also need to download the processed data (dds_fitted.rds) and place it in the local data/ directory.
+**Prerequisites:** 
+- Docker installed on your machine.
+- The processed data (`dds_fitted.rds`) must be placed in the local `data/` directory.
 
-Build the image:
-
-``` docker build -t rnaseq-mouse-pipeline ```
-
-Run the analysis:
-To run the pipeline, you must mount your local data/ and results/ directories into the container using the -v flag. This allows the container to read the input and write the output directly to your host machine
+**1. Build the image:**
+```bash
+docker build -t rnaseq-mouse-pipeline .
+```
+**2. Run the analysis:**
+Run this command from the root directory of the repository. It mounts your local data/ and results/ folders into the container.
+```docker run --rm \
+  -v ${PWD}/data:/rnaseq/data \
+  -v ${PWD}/results:/rnaseq/results \
+  rnaseq-mouse-pipeline
+  ```
 
 ## Data
 
