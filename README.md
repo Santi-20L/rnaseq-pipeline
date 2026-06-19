@@ -145,7 +145,8 @@ docker build -t rnaseq-mouse-pipeline .
 ```
 **2. Run the analysis:**
 Run this command from the root directory of the repository. It mounts your local data/ and results/ folders into the container.
-```docker run --rm \
+```
+docker run --rm \
   -v ${PWD}/data:/rnaseq/data \
   -v ${PWD}/results:/rnaseq/results \
   rnaseq-mouse-pipeline
