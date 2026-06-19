@@ -132,6 +132,16 @@ Top 15 enriched KEGG pathways in the FT vs NA comparison. Pathways associated wi
 Hierarchical clustering heatmap of the top 50 most variable genes across all samples, colored by normalized expression (red = high, blue = low). Samples cluster clearly by dietary condition (FA = green, FT = pink, NA = blue), confirming strong condition-driven transcriptomic separation. A subset of genes shows markedly elevated expression in FT samples, while FA and NA share a partially overlapping expression profile, consistent with the low DEG count observed in the FA vs NA comparison.
 
 ---
+##  Running with Docker (Recommended)
+The analysis environment is fully containerized using the official Bioconductor Docker image (Release 3.18), ensuring complete reproducibility of R and Bioc package versions.
+
+Prerequisites: You need Docker installed on your machine. You also need to download the processed data (dds_fitted.rds) and place it in the local data/ directory.
+
+Build the image:
+
+docker build -t rnaseq-mouse-pipeline .
+Run the analysis:
+To run the pipeline, you must mount your local data/ and results/ directories into the container using the -v flag. This allows the container to read the input and write the output directly to your host machine
 
 ## Data
 
