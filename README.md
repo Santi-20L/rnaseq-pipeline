@@ -139,7 +139,8 @@ Prerequisites: You need Docker installed on your machine. You also need to downl
 
 Build the image:
 
-docker build -t rnaseq-mouse-pipeline .
+``` docker build -t rnaseq-mouse-pipeline ```
+
 Run the analysis:
 To run the pipeline, you must mount your local data/ and results/ directories into the container using the -v flag. This allows the container to read the input and write the output directly to your host machine
 
