@@ -165,8 +165,8 @@ Quantification was performed using **Kallisto** (pseudoalignment), followed by i
 ## Author
 
 **Santi Isgrò**
-BSc in Computer Science — Università degli Studi di Catania
-Thesis work conducted at Universidad de Cantabria (Spain)
+BSc in Computer Science — Università degli Studi di Catania,
+Thesis work conducted at Universidad de Cantabria (Spain) under the supervision of Prof. Calderón
 
 ---
 
