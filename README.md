@@ -156,7 +156,7 @@ docker run --rm \
 
 Raw data is not included in this repository. The original dataset is publicly available:
 
-> Dantas Machado, A.C. et al. (2022). *Diet and gut microbiota composition shape the ileal transcriptome in mice.* [Add full reference and GEO accession if available]
+> Dantas Machado, A.C. et al. (2022). *Diet and gut microbiota composition shape the ileal transcriptome in mice.* [https://data.mendeley.com/datasets/xyxpvsyvzn/1]
 
 Quantification was performed using **Kallisto** (pseudoalignment), followed by import into R via **tximport** and normalization/analysis with **DESeq2**.
 
